@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #CDC7C7;
+    width: 100vw;
+    min-height: 1080px;
+    overflow-x:hidden ;
+}
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 80vw;
+    gap: 12vh;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    gap: 4vh;
+    margin-top: 4%;
+}
+
+.headdata{
+
+    height: 20vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+.headdata  #logoimg{
+    height: 4vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.headdata  .motoinhead h1{
+    font-size: 5vw;
+    color: rgba(0, 0, 0, 0.841);
+}
+.headdata  .motoinhead p{
+    transform: translateY(-2vh);
+    font-size: 1vw;
+    width: 90%;
+    color: rgba(0, 0, 0, 0.841);
+}
+
+
+
+/* 1st block of image for header */
+.headimages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40vh;
+    width: 80%;
+    gap: 1vw;
+    justify-content: space-between;
+}
+.headimages .block{
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.headimages .block:nth-child(1){
+    background: rgba(0, 0, 0, 0.844);
+    transition: 1.5s;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.headimages .block:nth-child(1) .image{
+   height: 20vw;
+   aspect-ratio: 1/1;
+   transition: 1.2s;
+   background-position: center;
+    background-size: cover;
+}
+.headimages .block:nth-child(1)::before{
+    content: 'Web Design';
+    position: absolute;
+    left: 50%;
+    bottom: -90%;
+    transform: translateX(-50%);
+    transition: 800ms;
+    z-index: 4;
+    font-size: 1vw;
+    width: 100%;
+    text-align: center;
+}
+.headimages .block:nth-child(1):hover::before{
+    bottom: 5%;
+    color: aliceblue;
+}
+.headimages .block:nth-child(1):hover .image{
+    background: url("./images/cow.jpg");
+    background-position: center;
+    background-size: cover;
+    scale: 1.1;
+}
+
+
+
+
+
+
+
+/* 3nd block of image for header */
+.headimages .block:nth-child(3) .b1{
+    background: rgba(0, 0, 0, 0.844);
+    transition: 1.5s;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+.headimages .block:nth-child(3){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.headimages .block:nth-child(3) .b1 .image{
+   min-height: 9vw;
+   aspect-ratio: 1/1;
+   transition: 1.2s;
+   background-position: center;
+    background-size: cover;
+}
+.headimages .block:nth-child(3) .b1::before{
+    content: 'Web Design';  /*change the hover text*/
+    position: absolute;
+    left: 50%;
+    bottom: -90%;
+    transform: translateX(-50%);
+    transition: 800ms;
+    z-index: 4;
+    font-size: 1vw;
+    width: 100%;
+    text-align: center;
+}
+.headimages .block:nth-child(3) .b1:hover::before{
+    bottom: 5%;
+    color: aliceblue;
+}
+.headimages .block:nth-child(3) .b1:hover .image{
+    background: url("./images/cow.jpg");
+    background-position: center;
+    background-size: cover;
+    scale: 1.1;
+}
+
+
+
+
+
+/* 2nd block of image for header */
+.headimages .block:nth-child(2) .b2:nth-child(2){
+    background: rgba(0, 0, 0, 0.844);
+    transition: 1.5s;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+.headimages .block:nth-child(2){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.headimages .block:nth-child(2) .b2:nth-child(2) .image{
+   min-height: 9vw;
+   aspect-ratio: 1/1;
+   transition: 1.2s;
+   background-position: center;
+    background-size: cover;
+}
+.headimages .block:nth-child(2) .b2:nth-child(2)::before{
+    content: 'Web Design';
+    position: absolute;
+    left: 50%;
+    bottom: -90%;
+    transform: translateX(-50%);
+    transition: 800ms;
+    z-index: 4;
+    font-size: 1vw;
+    width: 100%;
+    text-align: center;
+}
+.headimages .block:nth-child(2) .b2:nth-child(2):hover::before{
+    bottom: 5%;
+    color: aliceblue;
+}
+.headimages .block:nth-child(2) .b2:nth-child(2):hover .image{
+    background: url("./images/cow.jpg");
+    background-position: center;
+    background-size: cover;
+    scale: 1.1;
+}
+
+
+
+
+
+/* 2nd block of images child */
+
+.headimages .block:nth-child(2) .b2:nth-child(1)::before{
+content: '';
+}
+
+
+.headimages .block:nth-child(2) .b2:nth-child(1) .b2child{
+    background: rgba(0, 0, 0, 0.844);
+    transition: 1.5s;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+.headimages .block:nth-child(2) .b2:nth-child(1){
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: none;
+    gap: 0.5vw;
+
+}
+.headimages .block:nth-child(2) .b2:nth-child(1) .b2child .image{
+   height: 9.5vw;
+   aspect-ratio: 1/1;
+   transition: 1.2s;
+   background-position: center;
+    background-size: cover;
+}
+.headimages .block:nth-child(2) .b2:nth-child(1) .b2child::before{
+    content: 'Web Design';
+    position: absolute;
+    left: 50%;
+    bottom: -90%;
+    transform: translateX(-50%);
+    transition: 800ms;
+    z-index: 4;
+    font-size: 1vw;
+    width: 100%;
+    text-align: center;
+}
+.headimages .block:nth-child(2) .b2:nth-child(1) .b2child:hover::before{
+    bottom: 5%;
+    color: aliceblue;
+}
+.headimages .block:nth-child(2) .b2:nth-child(1) .b2child:hover .image{
+    background: url("./images/cow.jpg");
+    background-position: center;
+    background-size: cover;
+    scale: 1.1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+.contact{
+    height: 60vh;
+    width: 60vw;
+    gap: 12vh;
+    margin: auto;
+    margin-top: 4%;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+.contact .imgcontainer{
+    height: 50vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.contact .imgcontainer .imagecontact{
+    height: 50vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transition: 1.2s;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.contact .imgcontainer .imagecontact{
+    background: url("./images/cow.jpg");
+    background-position: center;
+    background-size: cover;
+    scale: 1;
+}
+.contact .imgcontainer .imagecontact:hover{
+    background: url("./images/cow.jpg");
+    background-position: center;
+    background-size: cover;
+    scale: 1.1;
+}
+.contactdetails{
+    position: relative;
+    height: 60vh;
+}
+.contactdetails h1{
+    font-size: 4vw;
+    color: rgba(0, 0, 0, 0.844);
+}
+.contactdetails p   {
+    font-size: 1vw;
+    color: rgba(28, 28, 28, 0.675);
+    font-weight: 700;
+}
+.contactdetails a{
+    font-size: 1vw;
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.744);
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    transition: 800ms;
+}
+.contactdetails a:hover{
+    background: rgba(0, 0, 0, 0.944);
+}
+
+
+
+
+
+
+.mywork{
+    height: 60vh;
+    width: 70vw;
+    
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mywork h1{
+   font-size: 1.5vw;
+   color: rgba(0, 0, 0, 0.744);
+}
+.mywork .works{
+    margin-top: 4%;
+    width: 80vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.mywork .works .work{
+   background: rgba(0, 0, 0, 0.744);
+   width: 18vw;
+   aspect-ratio: 1/1;
+   border-radius: 5px;
+   overflow: hidden;
+   cursor: pointer;
+}
+@keyframes shake{
+    100%{
+        scale: 1.1;
+    }
+}
+.mywork .works .work .mytask{
+    background-size: cover;
+    background-position: center;
+    width: 22vw;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    transition: 1.2s;
+}
+.mywork .works .work:hover .mytask{
+    background: url("./images/cow.jpg");
+    background-size: cover;
+    background-position: center;
+    scale: 1.1;
+}
+.mywork .works .work:hover{
+    animation: shake 100ms linear;
+}
+
+
+
+
+/* animation */
+
+
+
+#bounceball{
+    margin-top: 10vh;
+    height: 1080px;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#bounceball h4{
+    
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.744);
+  }
+  #svgback {
+    height: 60vh;
+  }
+  
+  .ball {
+    height: 20px;
+    aspect-ratio: 1/1;
+    background: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 13px rgba(60, 53, 53, 0.324);
+    position: absolute;
+    top: 7vh;
+    left:0;
+    animation: bounceball 1.5s linear infinite;
+  }
+  
+  
+  /*  1          t 35    l  35
+    2          t 40    l  39
+    3          t 62    l  43
+    4          t 49    l  50
+    5          t 64    l  57.5
+    6          t 56  l  63
+    7          t 62  l  67.5*/
+  
+  @keyframes bounceball {
+    8% {
+        top: 20vh;
+        left: 13.5vw;
+    }
+  
+    16% {
+        top: 31vh;
+        left: 17.3vw;
+    }
+  
+    26% {
+        top: 53vh;
+        left: 20vw;
+    }
+  
+    35% {
+        top: 38vh;
+        left: 23.4vw;
+        
+    }
+  
+    45% {
+        top: 32vh;
+        left: 30vw;
+    }
+    
+    
+    63% {
+        top: 38vh;
+        left:38vw;
+    }
+    78% {
+        top: 53vh;
+        left: 41.6vw;
+    }
+  
+    86% {
+        top: 47vh;
+    left:44vw;
+        
+    }
+  
+    96.8% {
+        top: 43vh;
+        left: 49vw;
+    }
+    100%{
+        top: 53vh;
+        left: 57vw;
+        
+    }
+  
+  
+  }
+  
+
+
+@media (1910px<=width<=2000px){
+    .ball {
+        height: 40px;
+        aspect-ratio: 1/1;
+        background: black;
+        border-radius: 50%;
+        box-shadow: inset 0 0 13px rgba(60, 53, 53, 0.324);
+        position: absolute;
+        top: 5vh;
+        left:0vw;
+        animation: none;
+        animation: bounceball 1.2s linear infinite;
+      }
+      
+      
+      @keyframes bounceball {
+        8% {
+            top: 17.7vh;
+            left: 13.5vw;
+        }
+      
+        16% {
+            top: 30.7vh;
+            left: 19.3vw;
+        }
+      
+        26% {
+            top: 52.7vh;
+            left: 22vw;
+        }
+      
+        35% {
+            top: 37.7vh;
+            left: 27vw;
+            
+        }
+      
+        45% {
+            top: 32.7vh;
+            left: 35.9vw;
+        }
+        
+        /*  */
+        63% {
+            top: 40.7vh;
+            left:43.6vw;
+        }
+        78% {
+            top: 54.7vh;
+            left: 46.4vw;
+        }
+      
+        86% {
+            top: 46.7vh;
+            left:50vw;
+            
+        }
+      
+      
+        96.8% {
+            top: 44.1vh;
+            left: 56.6vw;
+        }
+        100%{
+            top: 53vh;
+            left: 64vw;
+            
+        }
+      
+      
+      }
+}
